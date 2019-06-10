@@ -1,16 +1,16 @@
 # Create you a friend with this package
 This is the github page of the *twitterfriends* package
 
-If you ever feel alone, don't anymore. Create you a friend with this package and find the hapiness :D
+If you ever feel alone, don't anymore. Create you a friend with this package and find the hapiness :smiley:
 
 ## Just a word
 
 This package isn't organized, nor finished.
 It still needs a lot of works and I'm going to do it.
-Any suggestions are welcomed :simple_smile:
+Any suggestions are welcomed :blush:
 
 ## For now
-There isn't tests for this package, there're coming soon :D
+There isn't tests for now, they'll come soon :D
 
 You can still use the package. Here are some steps:
 
@@ -47,7 +47,7 @@ You can still use the package. Here are some steps:
     - Just have to run the main.go file now, and your friend will speak for the first time
         `go build -o myAwesomeFriend; ./myAwesomeFriend`
         
-Here you go ! Your friend talks for the first time, congrats !
+Here you go ! Your friend talks for the first time, congrats ! :smiley:
 
 ## What can it do ?
 #### SendTweet(*status string*) *func*
