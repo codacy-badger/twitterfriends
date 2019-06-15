@@ -40,7 +40,22 @@ You can still use the package. Here are some steps:
         
         func main() {
             tw.Debug = true // Enable the debugging, still in progress, not necessary
-            tw.SendTweet("here is the tweet status, a.k.a the text content of your tweet")
+            // Create json string
+            json := `{
+                        "status": "This is the tweet's text",
+                        "in_reply_to_status_id": 123435454452, // Tweet id that you want to reply to
+                        "screen_name": "@thisisausername", // The twitter username of the guy your responding
+                        "possibly_sensitive": true, // NSFW content
+                        // Geographic position
+                        "lat": -67.74365, 
+                        "long": 123.57434678
+                     }`
+            tweet := tw.PostTweet(json)
+            
+            // Destroy the tweet
+            tweet.DestroyTweet()
+            // or
+            tw.DestroyTweet(tweet.TweetID)
             
         }
         ```
